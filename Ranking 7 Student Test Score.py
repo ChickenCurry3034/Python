@@ -1,0 +1,47 @@
+student1=input("What is your name?")
+marks1=float(input("What were your marks for the test?"))
+student1marks=[student1,marks1]
+student2=input("What is your name?")
+marks2=float(input("What were your marks for the test?"))
+student2marks=[student2,marks2]
+student3=input("What is your name?")
+marks3=float(input("What were your marks for the test?"))
+student3marks=[student3,marks3]
+student4=input("What is your name?")
+marks4=float(input("What were your marks for the test?"))
+student4marks=[student4,marks4]
+student5=input("What is your name?")
+marks5=float(input("What were your marks for the test?"))
+student5marks=[student5,marks5]
+student6=input("What is your name?")
+marks6=float(input("What were your marks for the test?"))
+student6marks=[student6,marks6]
+student7=input("What is your name?")
+marks7=float(input("What were your marks for the test?"))
+student7marks=[student7,marks7]
+totalmarks=[marks1,marks2,marks3,marks4,marks5,marks6,marks7]
+totalmarks.sort()
+totalmarks.reverse()
+students=totalmarks.copy()
+students.pop(totalmarks.index(marks1))
+students.insert(totalmarks.index(marks1),student1)
+students.pop(totalmarks.index(marks2))
+students.insert(totalmarks.index(marks2),student2)
+students.pop(totalmarks.index(marks3))
+students.insert(totalmarks.index(marks3),student3)
+students.pop(totalmarks.index(marks4))
+students.insert(totalmarks.index(marks4),student4)
+students.pop(totalmarks.index(marks5))
+students.insert(totalmarks.index(marks5),student5)
+students.pop(totalmarks.index(marks6))
+students.insert(totalmarks.index(marks6),student6)
+students.pop(totalmarks.index(marks7))
+students.insert(totalmarks.index(marks7),student7)
+print("The results are coming in...")
+print("In first place, we have",students[0],"with a score of",totalmarks[0],"%")
+print("In second place, we have",students[1],"with a score of",totalmarks[1],"%")
+print("In third place, we have",students[2],"with a score of",totalmarks[2],"%")
+print("In fourth place, we have",students[3],"with a score of",totalmarks[3],"%")
+print("In fifth place, we have",students[4],"with a score of",totalmarks[4],"%")
+print("In sixth place, we have",students[5],"with a score of",totalmarks[5],"%")
+print("In last place, we have",students[6],"with a score of",totalmarks[6],"%")
