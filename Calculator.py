@@ -2,8 +2,7 @@ def factorial(number):
   product=1
   for e in range(1,number+1):
     product=product*e
-    print("The factorial of", number, "is", product)
-  print("Thanks for using Our Service")
+  print("The factorial of", number, "is", product)
 
 def pyth():
   yn=input("Do you know the value of the Hypotenuse?")
