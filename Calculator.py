@@ -2,7 +2,7 @@ def factorial(number):
   product=1
   for e in range(1,number+1):
     product=product*e
-  print("jagfjjf")
+    print("The factorial of", number, "is", product)
   print("Thanks for using Our Service")
 
 def pyth():
